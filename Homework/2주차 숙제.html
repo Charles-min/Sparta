@@ -1,0 +1,245 @@
+<html>
+<head>
+   <title>아이패드 프로 3세대 팝니다. by Charles</title>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+   <!-- JS -->   
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+   <!-- 구글폰트 -->
+   <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+  
+   <!-- bootstrap css 불러오기 -->
+   <link rel = "stylesheet" type = "text/css" href="bootstrap.css">
+   
+	<style>
+		.ipad_image
+		{
+			text-align: center;
+		}
+		.card-text
+		{
+			text-align: center;
+		}
+		.order_infor
+		{
+			text-align: center;
+			background-color: white;
+    		border: 1px solid purple;
+			    border-radius: 10px;
+			    display: inline-block;
+			    font: inherit;
+			    line-height: 1.5em;
+			    padding: 0.5em 3.5em 0.5em 1em;
+
+			display: block;
+			margin: 0 auto;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+
+
+			background-image:
+			linear-gradient(45deg, transparent 50%, gray 50%),
+			linear-gradient(135deg, gray 50%, transparent 50%),
+			radial-gradient(#ddd 70%, transparent 72%);
+			background-position:
+			calc(100% - 20px) calc(1em + 2px),
+			calc(100% - 15px) calc(1em + 2px),
+			calc(100% - .5em) .5em;
+			background-size:
+			5px 5px,
+			5px 5px,
+			1.5em 1.5em;
+			background-repeat: no-repeat;
+		}
+	</style>
+
+
+<script type="text/javascript">
+
+   function input_1()
+   {
+
+   		function is_phone(p)
+   		{
+   			var regExp = /^\d{3}-\d{3,4}-\d{4}$/;
+      		return regExp.test(p);
+   		}
+
+        let name = $('#order_name').val();
+   		let order_num = $('#order_number').val();
+   		let address = $('#order_address').val();
+   		let phonenumber = $('#order_phonenumber').val();
+
+    	if(name =='')
+         {
+         	alert("이름을 입력해주세요!");
+         	$('#order_name').focus();
+         	return;
+         }
+         else if(order_num =='')
+         {
+         	alert("수량을 입력해주세요!");
+         	$('#order_number').focus();
+         	return;
+         }
+         else if(address =='')
+         {
+         	alert("주소를 입력하세요!");
+         	$('#order_address').focus();
+         	return;
+         }
+      	 else if(phonenumber =='')
+      	 {
+      	 	alert("핸드폰 번호를 입력하세요!")
+      	 	$('#order_phonenumber').focus();
+      	 	return;
+      	 }
+      	 else if(!is_phone(phonenumber))
+      	 {
+      	 	alert('휴대폰번호 입력 형식이 틀립니다. \n 010-0000-0000으로 입력해주세요!');
+      	 	return;
+      	 }
+    
+     $.ajax({
+          type: "POST",
+          url: "/input_1",
+          data: { name_give:name, count_give:count, address_give:address, phone_give:phone },
+          success: function(response)
+          {
+            if(response['result'] == 'success')
+            {
+              alert('주문 완료!');
+              window.location.reload();
+            }
+          }
+        })
+    }
+
+    $(document).ready(function()
+     {
+        $('#orders-box').html('');
+        listing();
+      });
+
+    function listing() 
+      {
+        $.ajax({
+          type: "GET",
+          url: "/input_1",
+          data: {},
+          success: function(response){
+             if (response['result'] == 'success') 
+             {
+               let orders = response['orders'];
+               console.log(orders);
+               for (let i = 0; i < orders.length; i++) 
+               {
+                 make_card(orders[i]['name'],orders[i]['count'],orders[i]['address'],orders[i]['phone'])
+               }
+             } 
+             else 
+             {
+               alert('주문정보를 가져오지 못했습니다.');
+             }
+          }
+        })
+      }
+
+    function make_card(name,count,address,phone) 
+      {
+        let temp_html = '<tr>\
+            <td>'+name+'</td>\
+            <td>'+count+'</td>\
+            <td>'+address+'</td>\
+            <td>'+phone+'</td>\
+          </tr>';
+        $('#orders-box').append(temp_html);
+      }
+      	
+</script>
+</head>
+
+  <body>
+  	<div class = "all_page">
+  		
+  		<div class = "ipad_image">
+  			<img src = "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/og-ipad-pro?wid=600&hei=600&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1539362700105"></img>
+  		</div>
+
+  		<div>	
+  			<div class = "card-body">
+  				<p class = "card-text"> <span style = "font-size: 26px"> 
+  				아이패드 프로 11인치 64GB 와이파이모델 팝니다!! </span> 
+  					<h4 class = "card-text"> 가격 : 990,000원/개.</h4>
+  				</p>
+  
+  				<p class = "card-text">
+  				스크린 한가득, 성능 한가득. Apple의 가장 앞선 기술이 집약된 완전히 새로운 설계로 탄생된 iPad Pro. iPad의 가능성에 대한 당신의 선입견을 송두리째 바꿔놓을 것입니다. </p>
+
+  			</div>
+  		</div>	
+
+  	<div class = "order_infor">
+  		<div class="input-group mb-3">
+            <div class="input-group-prepend">
+               <span class="input-group-text" id="basic-addon1">주문자 이름</span>
+            </div>
+            <input type="text" class="form-control" id="order_name" >
+         </div>
+
+         <div class="input-group mb-3">
+            <div class="input-group-prepend">
+               <label class="input-group-text" for="inputGroupSelect01">수량</label>
+            </div>
+            <select class="custom-select" id="order_number">
+               <option selected value>--수량을 선택하세요--</option>
+               <option value="1">1</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7</option>
+               <option value="8">8</option>
+               <option value="9">9</option>
+            </select>
+         </div>
+
+
+         <div class="input-group mb-3">
+            <div class="input-group-prepend">
+               <span class="input-group-text" id="basic-addon1">주소</span>
+            </div>
+            <input type="text" class="form-control" id="order_address" >
+         </div>
+
+         <div class="input-group mb-3">
+            <div class="input-group-prepend">
+               <span class="input-group-text" id="basic-addon1">전화번호</span>
+            </div>
+            <input type="text" class="form-control" id="order_phonenumber" >
+         </div>
+
+         <button onclick="input_1()" type="button" class="btn btn-primary">주문하기</button>
+
+  	</div>	
+  	<div class="orders">
+  		<table class="table">
+  			<thead></thead>
+  			<tbody id = "orders-box">
+
+  			</tbody>
+
+  </body>
+</html>
