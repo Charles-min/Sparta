@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d335dbf0-b230-432d-be3e-b01d8fecd17a" name="Default Changelist" comment="" />
+    <list default="true" id="d335dbf0-b230-432d-be3e-b01d8fecd17a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4주차 숙제.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5)관련 기사.html" beforeDir="false" afterPath="$PROJECT_DIR$/../5)관련 기사.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/mongo_test.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,23 +30,73 @@
     <option name="WARN_ABOUT_DETACHED_HEAD" value="false" />
   </component>
   <component name="ProjectId" id="1WbYeru1eX3ziCBfxrSu72UTrWT" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\이상민\Desktop\SSC_6th_Club\Sparta\etc\python_first\static" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\이상민\Desktop\SSC_6th_Club\Sparta\etc\python_first" />
       <recent name="C:\Users\서피스\Desktop\Sparta\etc\python_first" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.4주차 숙제">
+    <configuration name="4주차 숙제" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python_first" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/4주차 숙제.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="db_practice" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python_first" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/db_practice.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="hello" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_first" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -58,8 +118,54 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="hello_예제코드" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python_first" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hello_예제코드.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="my_server" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python_first" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/my_server.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.4주차 숙제" />
+        <item itemvalue="Python.my_server" />
+        <item itemvalue="Python.db_practice" />
+        <item itemvalue="Python.hello_예제코드" />
         <item itemvalue="Python.hello" />
       </list>
     </recent_temporary>
@@ -89,28 +195,52 @@
     </task>
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="69" key="#Notifications" timestamp="1579422006009">
-      <screen x="0" y="0" width="1280" height="813" />
+    <state x="0" y="88" key="#Notifications" timestamp="1580620948211">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="69" key="#Notifications/0.0.1280.813@0.0.1280.813" timestamp="1579422006009" />
+    <state x="0" y="88" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1580620948211" />
     <state x="707" y="213" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580113639265">
       <screen x="0" y="0" width="1280" height="813" />
     </state>
     <state x="707" y="213" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.813@0.0.1280.813" timestamp="1580113639265" />
-    <state x="491" y="176" key="FileChooserDialogImpl" timestamp="1580619965028">
+    <state x="491" y="176" key="FileChooserDialogImpl" timestamp="1580623720916">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="491" y="176" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580619965028" />
-    <state x="213" y="63" key="SettingsEditor" timestamp="1580620338985">
+    <state x="491" y="176" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580623720916" />
+    <state width="1025" height="233" key="GridCell.Tab.0.bottom" timestamp="1580632753286">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1025" height="233" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580632753286" />
+    <state width="1025" height="233" key="GridCell.Tab.0.center" timestamp="1580632753286">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1025" height="233" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580632753286" />
+    <state width="1025" height="233" key="GridCell.Tab.0.left" timestamp="1580632753285">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1025" height="233" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580632753285" />
+    <state width="1025" height="233" key="GridCell.Tab.0.right" timestamp="1580632753286">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1025" height="233" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580632753286" />
+    <state x="213" y="63" key="SettingsEditor" timestamp="1580628986901">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="142" y="49" key="SettingsEditor/0.0.1280.813@0.0.1280.813" timestamp="1579425355586" />
-    <state x="213" y="63" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580620338985" />
-    <state x="506" y="295" key="com.intellij.ide.util.TipDialog" timestamp="1580619290243">
+    <state x="213" y="63" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580628986901" />
+    <state x="506" y="295" key="com.intellij.ide.util.TipDialog" timestamp="1580631945018">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="337" y="231" key="com.intellij.ide.util.TipDialog/0.0.1280.813@0.0.1280.813" timestamp="1580112611095" />
-    <state x="506" y="295" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580619290243" />
+    <state x="506" y="295" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580631945018" />
+    <state x="1103" y="194" width="672" height="678" key="search.everywhere.popup" timestamp="1580622890015">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1103" y="194" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580622890015" />
   </component>
 </project>
