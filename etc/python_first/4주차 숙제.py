@@ -14,7 +14,7 @@ soup = BeautifulSoup(data.text, 'html.parser')
 # select를 이용해서, tr들을 불러오기
 
 music_info = soup.select('#wrap-main > #wrap-body > #body-content > .newest-list > .music-list-wrap > .list-wrap > tbody > tr')
-num = 1
+rank = 1
 
 for music in music_info:
     # movie 안에 a 가 있으면, console 우클릭 copy selector로 확인
@@ -23,6 +23,12 @@ for music in music_info:
     if music_tag is not None:
         artist = music.select_one('a.artist').text
         title = music.select_one('a.title').text.strip()
-        print (num, artist, title)
-        num += 1
+
+        doc = {
+            'rank': rank,
+            'title': title,
+            'artist': artist
+        }
+        db.music_info.insert_one(doc)
+        rank += 1
 
