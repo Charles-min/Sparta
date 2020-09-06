@@ -14,7 +14,7 @@ headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)AppleWebKit/
 def scraping_jini(page):
 
     data = requests.get(request_url(page),headers=headers)
-    soup = BeautifulSoup(data.text, 'html.parser')
+    soup = BeautifulSoup(data.text, 'xml.parser')
 
     # select를 이용해서, tr들을 불러오기
 
@@ -45,3 +45,6 @@ db.music_info.delete_many({})
 
 for i in range(1,5):
     scraping_jini(i)
+
+
+
